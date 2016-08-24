@@ -20,4 +20,21 @@
 #define BTM_DEF_LOCAL_NAME   "YU5010"
 #define BLUETOOTH_QTI_SW TRUE
 #define BLE_VND_INCLUDED   TRUE
+
+#define SC_MODE_INCLUDED FALSE
+
+// Networking, Capturing, Object Transfer
+// MAJOR CLASS: COMPUTER
+// MINOR CLASS: PALM SIZE PC/PDA
+#define BTA_DM_COD {0x1A, 0x01, 0x14}
+
+#define BTIF_HF_SERVICES (BTA_HSP_SERVICE_MASK)
+#define BTIF_HF_SERVICE_NAMES  { BTIF_HSAG_SERVICE_NAME, NULL }
+
+#define BTA_DISABLE_DELAY 1000 /* in milliseconds */
+#define BTA_HOST_INTERLEAVE_SEARCH TRUE
+#define BTA_SKIP_BLE_READ_REMOTE_FEAT TRUE
+
+/* Defined if the kernel does not have support for CLOCK_BOOTTIME_ALARM */
+#define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
 #endif
