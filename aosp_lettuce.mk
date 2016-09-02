@@ -21,9 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lettuce device
 $(call inherit-product, device/yu/lettuce/device.mk)
 
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/common.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lettuce
-PRODUCT_NAME := full_lettuce
+PRODUCT_NAME := aosp_lettuce
 PRODUCT_BRAND := YU
 PRODUCT_MODEL := YU5010
 PRODUCT_MANUFACTURER := YU
